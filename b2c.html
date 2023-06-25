@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instyga High Fidelity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+      .concluidas {
+        text-align: right;
+      }
+      .fonte-grande {
+        font-size: 42px;
+      }
+      p{
+        margin-bottom: 0px;
+      }
+      .tile{
+        border: none;
+        width: 250px;
+        height: 195px;
+        font-size: 30px;
+        margin: 5px;
+      }
+
+      .tile:hover{
+        border: none;
+        width: 250px;
+        height: 195px;
+        font-size: 30px;
+        margin: 5px;
+        border: 1px solid black
+      }
+      .tiles-line {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Instyga</a>
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" style="
+                      font-weight: bold;
+                      color: darkgreen;" href="#">Olá, Fulano!</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+
+    <div class="container">
+      <div class="row trilha-corrente">
+        <div class="col ">
+          <p>Trilha em Andamento:</p>
+          <h2>Desenvolvedor .NET</h2>
+        </div>
+        <div class="col concluidas">
+          <p>Avaliações Concluidas:</p> <span class="fonte-grande">12</span>
+        </div>
+      </div>
+      <div class="row trilha-corrente" style="margin-top: 1rem;">
+        <div class="col">
+          <h1>Próximas avaliações:</h1>
+          <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" style="color: black;" >
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="utilizando-migrations.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="poo-avancado.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="trouble.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row pratique" style="margin-top: 1rem;">
+        <h1>Pratique!</h1>
+        <p>Testes de questões multipla escolha, para você testar seu conhecimento de forma gratuíta.</p>
+        <div class="row tiles-line">
+          <div class="col"><button class="tile">Segurança no ASP.NET</button></div>
+          <div class="col"><button class="tile">Injeção de dependência</button></div>
+          <div class="col"><button class="tile">API Design</button></div>
+        </div>
+        <div class="row tiles-line">
+          <div class="col"><button class="tile">Orientação a objeto</button></div>
+          <div class="col"><button class="tile">Algoritmos</button></div>
+          <div class="col"><button class="tile">Testes unitários</button></div>
+        </div> 
+        <div class="row tiles-line">
+          <div class="col"><button class="tile">Entity Framework</button></div>
+          <div class="col"><button class="tile">Sql Básico</button></div>
+          <div class="col"><button class="tile">Sintaxe do C#</button></div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script type="application/javascript" >
+      const myCarouselElement = document.querySelector('#carouselExampleCaptions')
+
+      const carousel = new bootstrap.Carousel(myCarouselElement, {
+        interval: 4000,
+        touch: false
+      })
+    </script>
+  </body>
+</html>
