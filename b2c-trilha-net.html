@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instyga High Fidelity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+rel="stylesheet"
+/>
+    <style>
+      .concluidas {
+        text-align: right;
+      }
+      .fonte-grande {
+        font-size: 42px;
+      }
+      p{
+        margin-bottom: 0px;
+      }
+      .tile{
+        border: none;
+        width: 250px;
+        height: 195px;
+        font-size: 30px;
+      }
+
+      .tile:hover{
+        border: none;
+        width: 250px;
+        height: 195px;
+        font-size: 30px;
+        margin: 5px;
+        border: 1px solid black
+      }
+      .tiles-line {
+        margin: 10px;
+      }
+      img {
+        cursor: pointer;
+      }
+
+      .fa-1x {
+  font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+  cursor: pointer;
+}
+.dark-blue-text {
+  color: #0A38F5;
+}
+.dark-pink-text {
+  color: #AC003A;
+}
+.dark-amber-text {
+  color: #ff6f00;
+}
+.dark-teal-text {
+  color: #004d40;
+}
+
+.container {
+  margin-top: 1rem !important;
+}
+
+    </style>
+  </head>
+  <body>
+<!--Navbar-->
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">Instyga</a>
+    <a>Bem vindo, Fulano!</a>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+      data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+      aria-expanded="false" aria-label="Toggle navigation"  >
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-light shadow-3 p-4">
+    <a href="b2c.html"> <button class="btn btn-link btn-block border-bottom m-0">Inicio</button></a>
+    <a href="b2c-trilhas.html"> <button class="btn btn-link btn-block border-bottom m-0">Trilhas de carreira e certificados</button></a>
+  </div>
+</div>
+<!--/.Navbar-->
+    <!--/.Navbar-->
+  <!-- Sidebar -->
+
+    <div class="container">
+      <div class="row pratique" style="margin-top: 1rem;">
+        <div class="col">
+          <h1>Trilha Desenvolvedor .NET</h1>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >Começar!</button>
+        </div></div>
+      <div class="row pratique" style="margin-top: 1rem;">
+        <div class="col">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Criada por:
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-mdb-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul class="list-group list-group-light">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+                          class="rounded-circle" />
+                        <div class="ms-3">
+                          <p class="fw-bold mb-1">John Doe</p>
+                          <p class="text-muted mb-0">Software Engineering Manager @ Impressive Company </p>
+                        </div>
+                      </div>
+                      <span class="badge rounded-pill badge-success">Senior Advisor</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
+                          style="width: 45px; height: 45px" />
+                        <div class="ms-3">
+                          <p class="fw-bold mb-1">Alex Ray</p>
+                          <p class="text-muted mb-0">Tech Lead @ Cool Fintech</p>
+                        </div>
+                      </div>
+                      <span class="badge rounded-pill badge-primary">Advisor</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt=""
+                          style="width: 45px; height: 45px" />
+                        <div class="ms-3">
+                          <p class="fw-bold mb-1">Kate Hunnington</p>
+                          <p class="text-muted mb-0">Sr Solution Architect @ SOLID Consulting Co and Microsoft MVP</p>
+                        </div>
+                      </div>
+                      <span class="badge rounded-pill badge-success">Senior Advisor</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                  data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Habilidades e Avaliações
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-mdb-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul class="list-group list-group-light">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <button
+  type="button"
+  class="btn btn-lg"
+  data-mdb-toggle="popover"
+  title="Sobre a habilidade"
+  data-mdb-content="Espera-se que um desenvolvedor de software com habilidades em Fundamentos de Programação Orientada a Objeto com C# possua um sólido entendimento dos conceitos fundamentais desse paradigma de programação, como classes, objetos, herança, polimorfismo, encapsulamento e abstração."
+>
+Fundamentos de Programação Orientada a Objeto com c#
+</button>
+                     
+                      <span class="badge badge-primary rounded-pill">30~45 min</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <button
+                      type="button"
+                      class="btn btn-lg"
+                      data-mdb-toggle="popover"
+                      title="Sobre a habilidade"
+                      data-mdb-content="
+                      Espera-se que um desenvolvedor com habilidades em criar web servers com ASP.NET seja capaz de projetar e implementar servidores web robustos e escaláveis, utilizando os recursos oferecidos pelo framework ASP.NET. Isso inclui o conhecimento de como configurar rotas, lidar com requisições e respostas HTTP, integrar bancos de dados, autenticar usuários e implementar segurança. O desenvolvedor deve ser capaz de construir aplicativos web eficientes e de alto desempenho, garantindo uma experiência de usuário sólida."
+                    >
+                    Criando Web Servers com ASP.NET
+                    </button>
+                     
+                      <span class="badge badge-primary rounded-pill">15~30 min</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <button
+                      type="button"
+                      class="btn btn-lg"
+                      data-mdb-toggle="popover"
+                      title="Sobre a habilidade"
+                      data-mdb-content="
+                      Espera-se que um desenvolvedor com habilidades em Entity Framework seja capaz de utilizar esse framework ORM para mapear objetos para o banco de dados, realizar operações de CRUD de forma eficiente, estabelecer relacionamentos entre entidades e otimizar consultas para acesso aos dados de maneira eficaz."
+                    >
+                    Entity Framework
+                    </button>
+                     
+                      <span class="badge badge-primary rounded-pill">30~45 min</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <button
+                      type="button"
+                      class="btn btn-lg"
+                      data-mdb-toggle="popover"
+                      title="Sobre a habilidade"
+                      data-mdb-content="
+                      Espera-se que um desenvolvedor com habilidades em Migrations com EF Core seja capaz de gerenciar e controlar as alterações de esquema de banco de dados de maneira eficiente. Isso inclui criar e aplicar migrações, realizar rollback, sincronizar o esquema do banco de dados com o modelo de dados e lidar com cenários de atualizações e versionamento de banco de dados de forma consistente."
+                    >
+                    Migrations com EF Core
+                    </button>
+                     
+                      
+                      <span class="badge badge-primary rounded-pill">15~30 min</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <button
+                      type="button"
+                      class="btn btn-lg"
+                      data-mdb-toggle="popover"
+                      title="Sobre a habilidade"
+                      data-mdb-content="
+                      Depurar ASP.NET é uma habilidade fundamental para os desenvolvedores, envolvendo a capacidade de identificar e corrigir erros em aplicações ASP.NET. Isso inclui o uso de ferramentas de depuração para examinar o fluxo de execução, verificar valores de variáveis, rastrear o código passo a passo e detectar possíveis problemas. Os desenvolvedores devem ser capazes de interpretar mensagens de erro, utilizar breakpoints, inspecionar pilhas de chamadas e analisar registros de depuração para localizar e corrigir problemas de lógica ou comportamento inesperado no código ASP.NET. A depuração eficaz é essencial para otimizar o desempenho, solucionar bugs e garantir a funcionalidade correta das aplicações ASP.NET."
+                    >
+                    Troubleshooting ASP.NET
+                    </button>
+                     
+                     
+                      <span class="badge badge-primary rounded-pill">15~30 min</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <button
+                      type="button"
+                      class="btn btn-lg"
+                      data-mdb-toggle="popover"
+                      title="Sobre a habilidade"
+                      data-mdb-content="
+                      
+Espera-se que um desenvolvedor com habilidades em Unit Testing com xUnit seja capaz de criar e executar testes unitários eficazes usando o framework xUnit. Isso inclui a definição de casos de teste, a criação de métodos de teste, a configuração de ambientes de teste e a verificação dos resultados esperados. O desenvolvedor deve ser capaz de isolar unidades de código para testá-las independentemente, utilizar asserções para verificar os resultados e criar testes automatizados para garantir a qualidade do código e a detecção precoce de erros. O xUnit fornece uma estrutura flexível e poderosa para facilitar a escrita e execução de testes unitários eficientes."
+                    >
+                    Unit Testing com xUnity
+                    </button>
+                     
+                      
+                      <span class="badge badge-primary rounded-pill">30~45 min</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">iniciando...</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                    A trilha Desenvolvedor .NET será adicionada no seu Dashboard! 
+                    Você poderá executar as avaliações a partir da tela "Meu progresso".
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="b2c.html"><button class="btn btn-primary">Começar!</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+    <script type="application/javascript" >
+      const myCarouselElement = document.querySelector('#carouselExampleCaptions')
+
+      const carousel = new bootstrap.Carousel(myCarouselElement, {
+        interval: 4000,
+        touch: false
+      })
+    </script>
+  </body>
+</html>
