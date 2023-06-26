@@ -45,7 +45,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
-        <a class="navbar-brand" href="#">Instyga</a>
+        <a class="navbar-brand" href="/index.html">Instyga</a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" style="font-weight: bold" href="login.html"
@@ -58,33 +58,41 @@
         </ul>
       </div>
     </nav>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-3 border me-4 d-flex flex-column">
-          <div>
-            <span class="col">
-              <span class="d-block my-4 text-center">Novo usuário:</span>
-            </span>
-          </div>
-          <div>
+    <div class="mt-4 mb-5">
+      <div class="row mb-0">
+        <div class="col-8 offset-2 border p-5 d-flex flex-column">
+          <h2 class="d-block mt-2 mb-4">Novo usuário</h2>
+          <div class="mt-4">
             <label class="form-label">Email</label>
             <input class="form-control" type="text" name="" required="" />
           </div>
-          <div>
+          <div class="mt-4">
             <label class="form-label">Senha</label>
             <input class="form-control" type="password" name="" required="" />
           </div>
+          <div class="mt-4">
+            <label class="form-label">Confirmar senha</label>
+            <input
+              class="form-control"
+              type="confirm-password"
+              name=""
+              required=""
+            />
+          </div>
         </div>
-        <div class="col mycontent-left">
+      </div>
+
+      <div class="row text-bg-dark py-5">
+        <div class="col-4 offset-2">
           <div class="container action-block">
             <h1>Free</h1>
             <ul class="list-group list-group-light">
               <li class="list-group-item">
                 <input
+                  disabled
                   class="form-check-input me-1"
                   type="checkbox"
                   checked
-                  disabled
                   value=""
                   aria-label="..."
                 />
@@ -116,6 +124,7 @@
                 <input
                   class="form-check-input me-1"
                   type="checkbox"
+                  disabled
                   value=""
                   aria-label="..."
                 />
@@ -125,6 +134,7 @@
                 <input
                   class="form-check-input me-1"
                   type="checkbox"
+                  disabled
                   value=""
                   aria-label="..."
                 />
@@ -134,19 +144,19 @@
                 <input
                   class="form-check-input me-1"
                   type="checkbox"
+                  disabled
                   value=""
                   aria-label="..."
                 />
                 Eventos e conteúdos restritos para membros Premium
               </li>
             </ul>
-            <br /><br />
-            <a href="b2c.html">
-              <button class="btn btn-primary">Registrar Freemium</button>
+            <a class="btn btn-primary mt-4" href="b2c.html">
+              Registrar Freemium
             </a>
           </div>
         </div>
-        <div class="col">
+        <div class="col-4">
           <div class="container action-block">
             <h1>Premium - R$ 39.90</h1>
             <ul class="list-group list-group-light">
@@ -217,15 +227,15 @@
                 Eventos e conteúdos restritos para membros Premium
               </li>
             </ul>
-            <br /><br />
-            <a href="b2c-empty-premium.html">
-              <button class="btn btn-primary">Registrar Premium</button>
+            <a class="btn btn-primary mt-4" href="b2c-empty-premium.html">
+              Registrar Premium
             </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="row text-bg-dark fixed-bottom p-4">
+    <div class="my-5">.</div>
+    <div class="row text-bg-dark p-4 fixed-bottom">
       <h4 class="text-center">
         Plataforma de avaliações e certificações para profissionais Tech e Data
       </h4>
