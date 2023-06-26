@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instyga High Fidelity</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+    rel="stylesheet"
+    />
+</head>
+
+<body>
+  
+  <!--Navbar-->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Instyga</a>
+      <a>Bem vindo, Fulano!</a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+  <div class="container" style="margin-top: 1rem;">
+    <h2>Cadastrar nova posição: </h2>
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <div class="form-outline">
+          <label for="validationCustom01" class="form-label">Nome do candidato:</label>
+          <input type="text" class="" id="validationCustom01" value="" placeholder="João das neves" required />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+      </div><br>
+      <div class="col-md-4">
+        <div class="form-outline">
+          <label for="validationCustom01" class="form-label">Email:</label>
+          <input type="text" class="" id="validationCustom01" value="" placeholder="Email que será enviado o convite" required />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+      </div><br>
+      <div class="col-md-4">
+        <div class="form-outline">
+          <label for="validationCustom01" class="form-label">Prazo:</label>
+          <input type="text" class="" id="validationCustom01" value="" placeholder="Prazo maximo pra avaliação" required />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+      </div><br>
+    </form>
+    <br><br>
+    <div class="row">
+      <h4>Selecione a avaliação:</h4>
+      <div class="dropdown">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Selecione..</option>
+          <option value="1">Desenvolvedor .NET Senior</option>
+          <option value="2">Desenvolvedor .NET Jr</option>
+          <option value="3">Desenvolvedor Front End React</option>
+        </select>
+
+      </div>
+    </div>
+    <br><a href="b2b.html"><button class="btn btn-primary mt-4">Salvar candidatura e enviar convite!</button></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+
+<script>
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const totalTextbox = document.getElementById('tb_custo');
+  const timeTextbox = document.getElementById('tb_tempo');
+
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', updateTotal);
+  });
+
+  function updateTotal() {
+    let totalPrice = 0;
+    let totalTime = 0;
+
+    checkboxes.forEach(checkbox => {
+      if (checkbox.checked) {
+        const price = parseInt(checkbox.dataset.price);
+        const time = parseInt(checkbox.dataset.time);
+
+        if (!isNaN(price)) {
+          totalPrice += price;
+        }
+
+        if (!isNaN(time)) {
+          totalTime += time;
+        }
+      }
+    });
+
+    totalTextbox.value = `R$ ${totalPrice}.00`;
+    timeTextbox.value = `${totalTime} minutos`;
+  }
+</script>
+<!-- Font Awesome -->
+
+</body>
+
+</html>
