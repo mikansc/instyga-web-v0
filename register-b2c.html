@@ -12,13 +12,10 @@
     />
     <style>
       body {
-        margin-left: 5rem;
-        margin-right: 5rem;
         font-family: sans-serif;
       }
 
       .navbar {
-        margin-right: 10rem;
         background: black;
       }
 
@@ -27,8 +24,6 @@
       }
 
       .action-block {
-        margin-top: 10rem;
-        margin-bottom: 8rem;
         text-align: left;
       }
 
@@ -49,14 +44,11 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#">Instyga</a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a
-              class="nav-link"
-              style="font-weight: bold; color: darkgreen"
-              href="login.html"
+            <a class="nav-link" style="font-weight: bold" href="login.html"
               >Login</a
             >
           </li>
@@ -66,21 +58,23 @@
         </ul>
       </div>
     </nav>
-    <div class="container text-center">
+    <div class="container mt-5">
       <div class="row">
-        <div class="col">Novo usuário:</div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <label>Email</label>
-          <input type="text" name="" required="" />
+        <div class="col-3 border me-4 d-flex flex-column">
+          <div>
+            <span class="col">
+              <span class="d-block my-4 text-center">Novo usuário:</span>
+            </span>
+          </div>
+          <div>
+            <label class="form-label">Email</label>
+            <input class="form-control" type="text" name="" required="" />
+          </div>
+          <div>
+            <label class="form-label">Senha</label>
+            <input class="form-control" type="password" name="" required="" />
+          </div>
         </div>
-        <div class="col">
-          <label>Senha</label>
-          <input type="password" name="" required="" />
-        </div>
-      </div>
-      <div class="row">
         <div class="col mycontent-left">
           <div class="container action-block">
             <h1>Free</h1>
@@ -148,7 +142,7 @@
             </ul>
             <br /><br />
             <a href="b2c.html">
-              <button>Registrar Freemium</button>
+              <button class="btn btn-primary">Registrar Freemium</button>
             </a>
           </div>
         </div>
@@ -225,17 +219,16 @@
             </ul>
             <br /><br />
             <a href="b2c-empty-premium.html">
-              <button>Registrar Premium</button>
+              <button class="btn btn-primary">Registrar Premium</button>
             </a>
           </div>
         </div>
       </div>
-      <div class="row">
-        <h4 style="margin-top: 2rem">
-          Plataforma de avaliações e certificações para profissionais Tech e
-          Data
-        </h4>
-      </div>
+    </div>
+    <div class="row text-bg-dark fixed-bottom p-4">
+      <h4 class="text-center">
+        Plataforma de avaliações e certificações para profissionais Tech e Data
+      </h4>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
