@@ -1,16 +1,118 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Instyga High Fidelity</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <div class="container">
-      <p>This is my container</p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instyga High Fidelity</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  
+  <!--Navbar-->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Instyga</a>
+      <a>Bem vindo, Fulano!</a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+  </nav>
+  <div class="container">
+    
+    <h6 class="bg-light p-2 border-top border-bottom">Posições</h6>
+    <ul class="list-group list-group-light mb-4">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+
+          <div class="ms-3">
+            <p class="fw-bold mb-1">Desenvolvedor .NET Jr</p>
+            <p class="text-muted mb-0">Responsavel: lider-backend@minhaempresa.com</p>
+          </div>
+        </div>
+        <a class="btn btn-link btn-rounded btn-sm" href="b2b-nova-posicao.html"  role="button">Editar</a>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <div class="ms-3">
+            <p class="fw-bold mb-1">Desenvolvedor .NET Senior</p>
+            <p class="text-muted mb-0">Responsavel: lider-backend@minhaempresa.com</p>
+          </div>
+        </div>
+        <a class="btn btn-link btn-rounded btn-sm" href="b2b-nova-posicao.html" role="button">Editar</a>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <div class="ms-3">
+            <p class="fw-bold mb-1">Desenvolvedor Front End Pleno - React</p>
+            <p class="text-muted mb-0">Responsavel: lider-frontend@minhaempresa.com</p>
+          </div>
+        </div>
+        <a class="btn btn-link btn-rounded btn-sm" href="b2b-nova-posicao.html"  role="button">Editar</a>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <div class="ms-3">
+          <a href="b2b-nova-posicao.html"><button class="btn btn-primary mt-4">Nova Posição</button></a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <h6 class="bg-light p-2 border-top border-bottom">Candidaturas</h6>
+
+    <ul class="list-group list-group-light">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="https://mdbootstrap.com/img/new/avatars/9.jpg" alt="" style="width: 45px; height: 45px"
+            class="rounded-circle" />
+          <div class="ms-3">
+            <p class="fw-bold mb-1">Soraya Letto</p>
+            <p class="text-muted mb-0"><strong>Desenvolvedor .NET Jr</strong>. Convite enviado em: <i>ontem</i></p>
+          </div>
+          
+        </div>
+        <a class="btn btn-link btn-rounded btn-sm" href="#" role="button">Aguardando </a>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="https://mdbootstrap.com/img/new/avatars/11.jpg" class="rounded-circle" alt=""
+            style="width: 45px; height: 45px" />
+          <div class="ms-3">
+            <p class="fw-bold mb-1">Zeynep Dudley</p>
+            <p class="text-muted mb-0"><strong>Desenvolvedor .NET Senior</strong>. Convite enviado em: <i>semana passada</i></p>
+          </div>
+        </div>
+        <a class="btn btn-link btn-rounded btn-sm" href="#" role="button">Concluído</a>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="https://mdbootstrap.com/img/new/avatars/15.jpg" class="rounded-circle" alt=""
+            style="width: 45px; height: 45px" />
+          <div class="ms-3">
+            <p class="fw-bold mb-1">Ayat Black</p>
+            <p class="text-muted mb-0"><strong>Desenvolvedor Front End Pleno - React</strong>. Convite enviado em: <i>semana passada</i></p>
+          </div>
+        </div>
+        <a class="btn btn-link btn-rounded btn-sm" href="#" role="button">Concluído</a>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <div class="ms-3">
+          <button class="btn btn-primary mt-4">Nova candidatura</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
