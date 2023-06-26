@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instyga High Fidelity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+rel="stylesheet"
+/>
+    <style>
+      .concluidas {
+        text-align: right;
+      }
+      .fonte-grande {
+        font-size: 42px;
+      }
+      p{
+        margin-bottom: 0px;
+      }
+      .tile{
+        border: none;
+        width: 250px;
+        height: 195px;
+        font-size: 30px;
+        margin: 5px;
+      }
+
+      .tile:hover{
+        border: none;
+        width: 250px;
+        height: 195px;
+        font-size: 30px;
+        margin: 5px;
+        border: 1px solid black
+      }
+      .tiles-line {
+        margin: 10px;
+      }
+      img {
+        cursor: pointer;
+      }
+
+      .fa-1x {
+  font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+  cursor: pointer;
+}
+.dark-blue-text {
+  color: #0A38F5;
+}
+.dark-pink-text {
+  color: #AC003A;
+}
+.dark-amber-text {
+  color: #ff6f00;
+}
+.dark-teal-text {
+  color: #004d40;
+}
+    </style>
+  </head>
+  <body>
+<!--Navbar-->
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">Instyga</a>
+    <a>Bem vindo, Fulano!</a>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+      data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-light shadow-3 p-4">
+    <a href="b2c.html"> <button class="btn btn-link btn-block border-bottom m-0">Inicio</button></a>
+    <a href="b2c-trilhas.html"> <button class="btn btn-link btn-block border-bottom m-0">Trilhas de carreira e certificados</button></a>
+  </div>
+</div>
+<!--/.Navbar-->
+    <!--/.Navbar-->
+  <!-- Sidebar -->
+
+    <div class="container">
+      <div class="row trilha-corrente">
+        <div class="col ">
+          <p>Trilha em Andamento:</p>
+          <h2>Não há nenhuma trilha em andamento</h2>
+        </div>
+      </div>
+      <div class="row trilha-corrente" style="margin-top: 1rem;">
+        <div class="col">
+        </div>
+      </div>
+      <div class="row pratique" style="margin-top: 1rem;">
+        <h1>Pratique!</h1>
+        <p>Testes de questões multipla escolha, para você testar seu conhecimento de forma gratuíta.</p>
+        <div class="row tiles-line">
+          <div class="col"><button class="tile">Segurança no ASP.NET</button></div>
+          <div class="col"><button class="tile">Injeção de dependência</button></div>
+          <div class="col"><button class="tile">API Design</button></div>
+        </div>
+        <div class="row tiles-line">
+          <div class="col"><button class="tile">Orientação a objeto</button></div>
+          <div class="col"><button class="tile">Algoritmos</button></div>
+          <div class="col"><button class="tile">Testes unitários</button></div>
+        </div> 
+        <div class="row tiles-line">
+          <div class="col"><button class="tile">Entity Framework</button></div>
+          <div class="col"><button class="tile">Sql Básico</button></div>
+          <div class="col"><button class="tile">Sintaxe do C#</button></div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+    
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">iniciando...</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2>Atenção!</h2>
+        <h3>Você está prestes a iniciar uma avaliação.</h3>
+        <p>
+           Ao começar uma avaliação você será redirecionado para um outro ambiente.
+        </p>
+        <p>
+           As avaliações acontecem em um simulador. Reserve de 15 à 45 minutos para realizar uma avaliação.
+          </p>
+          <p>
+           Leia as instruções atentamente antes de começar.
+          </p>
+          <p>
+          Para segurança será necessário manter microfone e camera abertas no momento da avaliação.</p>
+
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Começar!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+    <script type="application/javascript" >
+      const myCarouselElement = document.querySelector('#carouselExampleCaptions')
+
+      const carousel = new bootstrap.Carousel(myCarouselElement, {
+        interval: 4000,
+        touch: false
+      })
+    </script>
+  </body>
+</html>
