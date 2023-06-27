@@ -1,0 +1,40 @@
+<style>
+  /* CSS GRID SYSTEM by Michael */
+  .m-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .m-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .m-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+</style>
+
+<div class="m-grid">
+  <div class="m-col">
+    <div class="card">
+      <img
+        src="/assets/images/placeholder-400.svg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-tile">Segurança no ASP.NET</h5>
+        <p class="card-text py-3 border-bottom">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="card-link">Começar</a>
+      </div>
+    </div>
+  </div>
+</div>
